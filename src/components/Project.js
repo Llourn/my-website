@@ -25,8 +25,7 @@ const Project = ({ image, title, links, description }) => {
           ) : (
             <p>No links here.</p>
           ))}
-
-        <p>{description}</p>
+        {description}
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,6 +8,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const AboutMe = () => {
+  useEffect(() => {
+    document.title = "Lorne Cyr";
+  }, []);
+
   return (
     <section className="about-me contain">
       <article className="about-me__description">

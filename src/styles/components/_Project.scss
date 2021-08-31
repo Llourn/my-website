@@ -2,8 +2,9 @@
 
 .project {
   margin-top: 1rem;
-  background-color: pink;
+  padding-bottom: 1rem;
   display: grid;
+  border-bottom: 1px solid colors.$grey;
   // grid-template-rows: minmax(200px, 300px), 1fr;
   img {
     object-position: center;
