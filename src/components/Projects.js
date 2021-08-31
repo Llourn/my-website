@@ -57,8 +57,13 @@ const Projects = () => {
         "https://github.com/Llourn/slime-game",
         "https://youtu.be/pJo47Cxs6d4",
       ],
-      description:
-        "Slime game is just a fun little idea I wanted to bring to life, inspired by movies like The Blob. Built using C# and the Unity3D game engine. I also did some 3D modelling for this project.",
+      description: (
+        <p>
+          Slime game is just a fun little idea I wanted to bring to life,
+          inspired by movies like The Blob. Built using C# and the Unity3D game
+          engine. I also did some 3D modelling for this project.
+        </p>
+      ),
     },
     {
       image: spaceLazorsImage,
@@ -68,8 +73,12 @@ const Projects = () => {
         "https://www.youtube.com/watch?v=lt8lp_f4Izk",
         "https://forlorne-games.itch.io/space-lazors",
       ],
-      description:
-        "Space Lazors is a never ending shoot'em up game made for mobile. Built using C# and the Unity3D game engine.",
+      description: (
+        <p>
+          Space Lazors is a never ending shoot'em up game made for mobile. Built
+          using C# and the Unity3D game engine.
+        </p>
+      ),
     },
   ]);
 
