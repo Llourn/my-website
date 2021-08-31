@@ -1,0 +1,11 @@
+@use "./reset";
+@use "./main";
+// abstracts
+@use "./abstracts/colors";
+@use "./abstracts/typography";
+
+// components
+@use "./components/Navbar";
+@use "./components/AboutMe";
+@use "./components/SplashHeader";
+@use "./components/Project";

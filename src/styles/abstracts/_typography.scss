@@ -1,0 +1,54 @@
+@use "../abstracts/colors";
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap");
+
+@font-face {
+  font-family: "Rockwell-Bold";
+  src: local("Rockwell-Bold"), url(../../fonts/rockweb.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+html {
+  font-size: 12px;
+  font-family: "Encode Sans", sans-serif;
+}
+
+.title {
+  font-size: clamp(3.4rem, 8vw, 6rem);
+  font-family: Rockwell-Bold, Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p,
+a,
+ul,
+ol,
+li,
+span,
+label,
+input,
+button {
+  font-size: 1.2rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+a {
+  color: colors.$primary;
+  &:hover {
+    color: colors.$secondary;
+  }
+}

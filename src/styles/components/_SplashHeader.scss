@@ -1,0 +1,23 @@
+@use "../abstracts/colors";
+
+.splash-header {
+  padding: 2rem;
+  background: colors.$primary;
+  text-align: center;
+  border-bottom: 1px colors.$secondary solid;
+  color: colors.$white;
+}
+
+.splash-header__image {
+  margin: 0 auto 1rem;
+  width: 100px;
+  height: 100px;
+  box-sizing: unset;
+  border-radius: 50%;
+  border: 5px colors.$white solid;
+  box-shadow: 0 0 0 0.1rem colors.$secondary;
+}
+
+.splash-header--projects {
+  text-align: left;
+}

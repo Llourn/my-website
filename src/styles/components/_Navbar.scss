@@ -1,0 +1,49 @@
+@use "../abstracts/colors";
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  background: colors.$white;
+  color: colors.$secondary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px colors.$secondary solid;
+  h1 {
+    font-size: 1.6rem;
+    padding-left: 1rem;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        position: relative;
+        color: inherit;
+        background-color: whitesmoke;
+        transition: background-color 0.1s ease-out;
+        padding: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          background-color: colors.$primary;
+          transition: opacity 0.1s ease-out;
+          opacity: 0.09375;
+        }
+        &:hover {
+          color: colors.$primary;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

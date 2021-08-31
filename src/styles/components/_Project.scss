@@ -1,0 +1,37 @@
+@use "../abstracts/colors";
+
+.project {
+  margin-top: 1rem;
+  background-color: pink;
+  display: grid;
+  // grid-template-rows: minmax(200px, 300px), 1fr;
+  img {
+    object-position: center;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 250px;
+  }
+}
+
+.project__image {
+  max-width: 100%;
+}
+
+.project__details {
+  padding: 1rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}

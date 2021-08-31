@@ -1,0 +1,49 @@
+@use "../abstracts/colors";
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.about-me__links {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me__link {
+  margin-bottom: 0.5rem;
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  :first-child {
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    color: colors.$secondary;
+  }
+}
+
+.about-me__description {
+  padding: 0 1rem;
+  &::first-line {
+    color: colors.$primary;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .about-me {
+    flex-direction: unset;
+  }
+
+  .about-me__links {
+    padding: 1rem 1rem;
+    display: block;
+  }
+}
