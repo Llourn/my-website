@@ -6,6 +6,7 @@ import slimeGameImage from "../assets/slime-game.png";
 import myWebsiteImage from "../assets/my-website.png";
 import recipeAppImage from "../assets/recipe-app.png";
 import dndImage from "../assets/dungons-and-drageons.png";
+import CIJImage from "../assets/CIJ.png";
 
 const Projects = () => {
   useEffect(() => {
@@ -13,6 +14,37 @@ const Projects = () => {
   }, []);
 
   const [projects] = useState([
+    {
+      image: CIJImage,
+      title: "Cyriously In Japan",
+      links: ["https://cyriouslyinjapan.com/"],
+      description: (
+        <p>
+          I built this app to help me prepare for a trip to Japan using Next.js,
+          Firebase auth/firestore/storage/hosting, and google maps. <br /> There
+          are three main features in this app.
+          <ul>
+            <li>
+              Language translation Japanese &lt;-&gt; English: Look up phrases
+              in either English or Japanese and get the corresponding
+              translation. Keep a history of terms and pin the ones you want to
+              keep for quick reference.
+            </li>
+            <li>
+              Kana Match. A game used to test your knowledge of Japanese Kana.
+              Choose which kana you want to include and review your results
+              after.
+            </li>
+            <li>
+              Places to visit. Make a list of places you want to visit with
+              photos, GPS co-ordinates, and notes to describe why you think it
+              would be cool to visit!
+            </li>
+          </ul>
+        </p>
+      ),
+      // description: `I started building this MERN stack app when my friends and I began playing D&D online. I thought I could come up with something more suited to our needs to I got to work on this. This is still a work in progress.`,
+    },
     {
       image: dndImage,
       title: "Dungons and Drageons",

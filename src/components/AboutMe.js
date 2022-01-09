@@ -15,6 +15,69 @@ const AboutMe = () => {
   return (
     <section className="about-me contain">
       <article className="about-me__description">
+        <p>Hello!</p>
+        <p>
+          My name is Lorne, and I've been working as a developer since 2017.
+        </p>
+        <p className="about-me__description__title">Skills:</p>
+        <p>
+          React, Next.js, Javascript, Typescript, jQuery, CSS, SASS, HTML, C#
+        </p>
+        <br />
+        <p className="about-me__description__title">
+          Here's a quick run down of my professional history:
+        </p>
+        <ul>
+          <li>
+            Originally started out in Enterprise IT, always had an interest in
+            programming.
+          </li>
+          <li>
+            Picked up C# and the Unity Game Engine, and learned programming
+            fundamentals.
+          </li>
+          <li>
+            Worked as a Gameplay Programmer throughout the maritimes, but
+            looking for something more consistent.
+          </li>
+          <li>
+            Pivotted to Web Development, and found a job with the University of
+            Fredericton as a Web Developer.
+          </li>
+          <li>
+            Since then, built several courses for the University of Fredericton.
+            Proposed, planned, and developed internal tools and applications
+            that improve development workflow.
+          </li>
+        </ul>
+        <br />
+        <p className="about-me__description__title">
+          And here's a little more about me:{" "}
+        </p>
+        <ul>
+          <li>I'm an autodidact, self-driven and love to learn. 💡</li>
+          <li>
+            I think the best way to learn new tech is to use it! So I build
+            personal projects using tech I'm interested in. 🔨
+          </li>
+          <li>I like to draw for fun. 🎨</li>
+          <li>
+            I'm studying Japanese to prepare for the time I'm able to travel
+            there. 🗾
+          </li>
+        </ul>
+
+        {/* 
+        <p>
+          2017-2019 I worked as a gameplay programmer working on various
+          projects for companies througout the maritimes.
+        </p>
+        <p>
+          2022-Current I worked as a web developer for the University of
+          Fredericton. Building course SCORM packages and developing internal
+          tools and applications to improve the development process.
+        </p>
+
         <p>Hello world!</p>
         <p>I am a Developer in Fredericton NB, Canada.</p>
         <p>
@@ -30,7 +93,7 @@ const AboutMe = () => {
           Outside of work I am a husband and father, who likes to play D&D, draw
           and work on my own personal projects. I'm currently building a MERN
           stack app that lets you play D&D with your friends online.
-        </p>
+        </p> */}
       </article>
       <article className="about-me__links">
         <div className="about-me__link">
