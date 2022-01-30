@@ -9,7 +9,8 @@ const SplashHeader = () => {
         <img src={me} alt="" className="splash-header__image" />
         <h1 className="title">Lorne Cyr</h1>
         <h3>
-          I build things. <FontAwesomeIcon icon={faMugHot} />
+          I love building things with code. Chronically curious. Future visitor
+          of Japan. 🎌
         </h3>
       </div>
     </section>

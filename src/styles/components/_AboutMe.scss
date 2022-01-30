@@ -3,11 +3,11 @@
 .about-me {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .about-me__links {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -41,6 +41,26 @@
   font-weight: bold;
 }
 
+.about-me__description__skills {
+  display: grid;
+  gap: 3px;
+  // grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a a";
+  grid-auto-columns: minmax(100px, auto);
+  > * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.about-me__description__skills--professional {
+  color: colors.$secondary;
+}
+
+.about-me__description__skills--recreational {
+  color: colors.$primary;
+}
+
 @media only screen and (min-width: 500px) {
   .about-me {
     flex-direction: unset;
@@ -49,5 +69,15 @@
   .about-me__links {
     padding: 1rem 1rem;
     display: block;
+  }
+
+  .about-me__description__skills {
+    grid-template-areas: "a a a";
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .about-me__description__skills {
+    grid-template-areas: "a a a a";
   }
 }
